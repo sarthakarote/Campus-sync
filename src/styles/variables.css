@@ -1,0 +1,76 @@
+/* Campus Sync design tokens. Every colour, spacing and surface value used
+   in the app is defined here so the look stays consistent across modules. */
+
+:root {
+  /* Colour palette (text and background pairs meet WCAG AA 4.5:1 contrast) */
+  --color-primary: #1E4FA3;
+  --color-primary-dark: #163B7A;
+  --color-on-primary: #FFFFFF;
+  --color-bg: #F5F7FA;
+  --color-surface: #FFFFFF;
+  --color-elevated: #FFFFFF;
+  --color-text: #1F2937;
+  --color-text-muted: #4B5563;
+  --color-border: #D1D5DB;
+  --color-focus: #F59E0B;
+  --color-danger: #B91C1C;
+  --color-danger-dark: #7F1D1D;
+  --color-overlay: rgba(17, 24, 39, 0.5);
+
+  /* Status badge pairs: text and background (colour is only a reinforcement) */
+  --status-submitted-bg: #E5E7EB;
+  --status-submitted-text: #374151;
+  --status-review-bg: #DBEAFE;
+  --status-review-text: #1E40AF;
+  --status-progress-bg: #FEF3C7;
+  --status-progress-text: #92400E;
+  --status-escalated-bg: #EDE9FE;
+  --status-escalated-text: #5B21B6;
+  --status-resolved-bg: #DCFCE7;
+  --status-resolved-text: #166534;
+  --status-lost-bg: #FEE2E2;
+  --status-lost-text: #991B1B;
+
+  /* Spacing scale: 4, 8, 12, 16, 24, 32, 48 px */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Typography */
+  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --text-sm: 14px;
+  --text-base: 16px;
+
+  /* Surfaces */
+  --radius-card: 8px;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --page-max-width: 1100px;
+  --sidebar-width: 240px;
+  --transition-fast: 150ms;
+}
+
+/* Dark mode. Applied by setting data-theme="dark" on <html>. Only the colour
+   tokens change; every component reads these, so the whole app follows. */
+[data-theme='dark'] {
+  --color-primary: #6EA8FE;
+  --color-primary-dark: #9CC2FF;
+  --color-on-primary: #0B1120;
+  --color-bg: #0F172A;
+  --color-surface: #1E293B;
+  --color-elevated: #263449;
+  --color-text: #E5E7EB;
+  --color-text-muted: #9AA6B8;
+  --color-border: #334155;
+  --color-focus: #FBBF24;
+  --color-danger: #F87171;
+  --color-danger-dark: #FCA5A5;
+  --color-overlay: rgba(2, 6, 23, 0.7);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.45);
+
+  --status-submitted-bg: #334155;
+  --status-submitted-text: #E5E7EB;
+}
